@@ -22,15 +22,19 @@ class Priorities {
                 queue.add(new Student(Integer.parseInt(details[3]), details[1], Double.parseDouble(details[2])));
             }
         });
-        System.out.println(queue);
+        System.out.println("queue: " + queue);
+
 
         List<Student> students = new ArrayList<>();
+        System.out.println("students: " + students);
 
         while (!queue.isEmpty()) {
             students.add(queue.poll()); //return the head of the lista dn add to the student's list
-            System.out.println(queue);
+            System.out.println("queue: " + queue);
+            System.out.println("students: " + students);
         }
-        System.out.println(queue);
+        System.out.println("queue: " + queue);
+        System.out.println("students: " + students);
         return students;
     }
 }
