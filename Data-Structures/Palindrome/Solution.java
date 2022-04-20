@@ -7,12 +7,12 @@ public class Solution {
 
     public static void main(String[] args) {
 
-        Scanner sc=new Scanner(System.in);
-        String A=sc.next();
+        Scanner sc = new Scanner(System.in);
+        String A = sc.next();
         sc.close();
 
         int i = 0;
-        int j = A.length()-1;
+        int j = A.length() - 1;
 
         boolean palindrome = true;
 
@@ -29,10 +29,5 @@ public class Solution {
         } else {
             System.out.println("No");
         }
-
     }
-
 }
-
-
-
