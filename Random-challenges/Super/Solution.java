@@ -4,18 +4,18 @@ import java.util.*;
 import java.io.*;
 
 
-class BiCycle{
-    String define_me(){
+class BiCycle {
+    String define_me() {
         return "a vehicle with pedals.";
     }
 }
 
-class MotorCycle extends BiCycle{
+class MotorCycle extends BiCycle {
     String define_me(){
         return "a cycle with an engine.";
     }
 
-    MotorCycle(){
+    MotorCycle() {
         System.out.println("Hello I am a motorcycle, I am "+ define_me());
 
         String temp = super.define_me(); //Fix this line
@@ -24,7 +24,8 @@ class MotorCycle extends BiCycle{
     }
 
 }
-class Solution{
+
+class Solution {
     public static void main(String []args){
         MotorCycle M=new MotorCycle();
     }
