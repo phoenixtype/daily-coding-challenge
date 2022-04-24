@@ -8,7 +8,7 @@ public class Solution {
         Iterator it = mylist.iterator();
         while(it.hasNext()){
             Object element = it.next();
-            if(element instanceof String) {
+            if(element.equals("###")) {
                 break;
             }
             //skip until you find a string object
@@ -32,8 +32,9 @@ public class Solution {
         Iterator it = func(mylist);
         while(it.hasNext()){
             Object element = it.next();
-            System.out.println(element);
+            System.out.println((String)element);
         }
+        sc.close();
     }
 }
 
